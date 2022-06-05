@@ -1,0 +1,65 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2rem;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 75%;
+    
+  }
+  
+  th,
+  td {
+    border: 4px solid #d1d8db;
+    text-align: center;
+    padding: 8px;
+    font-size: 24px;
+  }
+  
+  th {
+    background:#f7fbfe;
+    padding: 20px;
+    width: 75%;
+  }
+  
+  td {
+    background-color: rgb(68, 155, 142);
+    font-size: 24px;
+  }
+  
+  form {
+    display: flex;
+    gap: 5px;
+  }
+  
+  form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  form * {
+    font-size: 32px;
+  }
+  h4{
+    text-align: left;
+
+  }
+  .clm2{
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 8px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border:2px solid #aab;
+    gap: 16px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 12px lightblue;
+    }
+  .middle{
+    margin-left: 25%;
+    margin-right: 25%;
+    }
