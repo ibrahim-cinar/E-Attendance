@@ -10,11 +10,14 @@ const Event = () => {
     <div className="clm2">
       <div className="middle">
       <YoklamaTablosu />
-      </div>
       <NewRow />
-      <button className="button button1" onClick={() => setPageState("Login")}>
+      </div>
+
+      <div>      <button className="button button1" onClick={() => setPageState("Login")}>
         DEMO
       </button>
+      </div>
+
     </div>
   );
 };

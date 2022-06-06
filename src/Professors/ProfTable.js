@@ -7,11 +7,10 @@ const YoklamaTablosu = () => {
   const[ogrencinumara,setOgrenciNumara] = useState();
   const {number,all, lessons,setAll} = useContext(AttendanceContext);
   const izid = [];
-  
   all.forEach((element) => {
     if(element.number !== number){
       if(element.InputCode === lessons){
-        izid.push(<Table props={element} />);
+          izid.push(<Table props={element} />);
      }
     }
   });

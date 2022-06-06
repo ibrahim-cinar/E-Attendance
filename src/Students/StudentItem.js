@@ -34,6 +34,7 @@ const StudentLesson = () => {
   const Information = () => {
     if (!bool) {
       alert("Kaydınız Bulunmaktadır.");
+      setPageState("Login");
     } else {
       STUDENTS[x].studentLesson.forEach((element) => {
         if (lessons === element) {
