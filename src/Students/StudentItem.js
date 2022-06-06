@@ -34,7 +34,6 @@ const StudentLesson = () => {
   const Information = () => {
     if (!bool) {
       alert("Kaydınız Bulunmaktadır.");
-      setPageState("Login");
     } else {
       STUDENTS[x].studentLesson.forEach((element) => {
         if (lessons === element) {
@@ -63,7 +62,7 @@ const StudentLesson = () => {
       />
 
       <h3>
-        ÇINAR ÜNİVERSİTESİ <br /> E-YOKLAMA UYGULAMASI
+        TRAKYA ÜNİVERSİTESİ <br /> E-YOKLAMA UYGULAMASI
       </h3>
 
       <input className="input" disabled value={number} />
@@ -73,7 +72,6 @@ const StudentLesson = () => {
       <input
         className="input2"
         placeholder="Ders Kodu"
-        value={lessons}
         onChange={(e) => setLessons(e.target.value)}
       ></input>
       <button className="button button1" onClick={Information}>

@@ -39,7 +39,7 @@ const ProfessorLesson = () => {
       />
 
       <h3>
-        ÇINAR ÜNİVERSİTESİ <br /> E-YOKLAMA UYGULAMASI
+        TRAKYA ÜNİVERSİTESİ <br /> E-YOKLAMA UYGULAMASI
       </h3>
       <input className="input" disabled value={number} />
       <input className="input" disabled value={professorNm} />

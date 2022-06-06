@@ -2,10 +2,10 @@ import React, { useContext, useState } from "react";
 import { AttendanceContext } from "./Context.js";
 import PROFESSORS from "../Professors/Professor.js";
 import STUDENTS from "../Students/Student.js";
-import { Form } from "react-bootstrap";
 import "./Login.css";
+import { Form } from "react-bootstrap";
 const Login = () => {
-  const { setPageState, password, setPassword, number, setNumber, lessons } =
+  const { setPageState, password, setPassword, number, setNumber,} =
     useContext(AttendanceContext);
   const control = () => {
     PROFESSORS.forEach((professor) => {
@@ -27,17 +27,16 @@ const Login = () => {
     });
   };
   return (
-    <Form>
       <div className="box">
         <img
           src={require("../images/trakya-universitesi-logo.png")}
           width="200"
           height="200"
         />
-        <h1>ÇINAR ÜNİVERSİTESİ E-YOKLAMA UYGULAMASI</h1>
+        <h1>TRAKYA ÜNİVERSİTESİ E-YOKLAMA UYGULAMASI</h1>
         <input
           autoFocus="true"
-          className="input"
+          className="input2"
           type="text"
           placeholder="Numara"
           onChange={(e) => {
@@ -46,19 +45,18 @@ const Login = () => {
         />
         <input
           autoFocus="true"
-          className="input"
+          className="input2"
           type="password"
           placeholder="Şifre"
           onChange={(e) => {
             setPassword(e.target.value);
           }}
         />
-
+        <div>     
         <button className="button button1" onClick={control}>
           Giriş
-        </button>
+        </button></div>
       </div>
-    </Form>
   );
 };
 export default Login;
