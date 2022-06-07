@@ -3,31 +3,46 @@
     flex-direction: column;
     gap: 10px;
     padding: 2rem;
+    width: fit-content;
   }
   
   table {
     border-collapse: collapse;
-    width: 75%;
+    width: 650px;
+    margin-bottom: 100px;
     
   }
   
-  th,
+  th{
+    border: 4px solid #d1d8db;
+    text-align: center;
+    padding: 85px;
+    font-size: 16px;
+    width: fit-content;
+
+  }
   td {
     border: 4px solid #d1d8db;
     text-align: center;
-    padding: 8px;
+    padding: 50px;
     font-size: 24px;
+    width: 50%;
   }
-  
   th {
     background:#f7fbfe;
-    padding: 20px;
-    width: 75%;
+    padding: 15px;
+    width: 10px;
+  }
+  tr{
+    width: fit-content;
+    margin: 10px;
   }
   
   td {
-    background-color: rgb(68, 155, 142);
+    background-color: rgb(189, 240, 244);
     font-size: 24px;
+    padding: 49px;
+    margin: 10px;
   }
   
   form {

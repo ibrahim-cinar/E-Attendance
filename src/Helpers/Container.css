@@ -1,10 +1,9 @@
 body{
     font-family: 'Open Sans', sans-serif;
     background:#fff;
-    margin: 0 auto 0 auto;  
-    width:100%; 
+    width: 100%; 
     text-align:center;
-    margin: 20px 0px 20px 0px;   
+    margin: 150px 0px 20px 0px;   
   }
   
   p{
@@ -20,22 +19,24 @@ body{
   
   .box{
     background:white;
-    width:365px;
+    width:500px;
+    margin-left: 37%;
+    margin-top: -3%;
     border-radius:6px;
-    margin: 0 auto 0 auto;
     padding:0px 0px 70px 0px;
     border: #2980b9 4px solid;
     box-shadow: 5px 5px 5px 5px lightblue;
 
   }
   .clm{
-    margin-left: 42.5%;
+    margin-top: -100px;
+    margin-left: 37%;
     padding: 8px;
     flex-direction: column;
     display: flex;
+    width: 500px;
     align-items: center;
     border:2px solid #aab;
-    width: fit-content;
     gap: 16px;
     border-radius: 8px;
     box-shadow: 10px 10px 5px 12px lightblue;

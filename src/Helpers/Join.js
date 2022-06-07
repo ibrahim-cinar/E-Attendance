@@ -1,5 +1,4 @@
 import StudentLesson from "../Students/StudentItem";
-
 const Join = () => {
   
   return (

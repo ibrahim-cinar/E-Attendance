@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { AttendanceContext } from "./Helpers/Context";
 import Login from "./Helpers/Login";
 import Join from "./Helpers/Join";
