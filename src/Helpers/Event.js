@@ -8,8 +8,11 @@ const Event = () => {
   const [kaydet, setKaydet] = useState();
   const Gelenler=()=>{
     console.log(all);
-    setKaydet(all)
+    setKaydet(all);
     console.log(kaydet);
+    if(kaydet[0]!==undefined){
+      alert("Kaydedildi.");
+    }
   }
 
   return (

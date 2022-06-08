@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, {useContext } from "react";
 import { AttendanceContext } from "../Helpers/Context";
 import PROFESSORS from "./Professor";
 
 const ProfessorLesson = () => {
-  const { number, lessons, setLessons, setPageState, setStart, start } =
+  const { number, lessons, setLessons, setPageState, setStart} =
     useContext(AttendanceContext);
 
 

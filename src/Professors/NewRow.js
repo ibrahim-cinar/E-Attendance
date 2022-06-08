@@ -10,8 +10,6 @@ const NewRow = () => {
   const ekle = () => {
     const now = new Date();
     let date = now.toLocaleString("tr-TR");
-
-
     const x = STUDENTS.findIndex((e) => e.studentNumber === ogrencinumara);
     STUDENTS[x].studentLesson.find((eleman) => eleman === lessons);
 

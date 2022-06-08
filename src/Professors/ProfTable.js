@@ -1,10 +1,10 @@
-import React, { useState, useContext } from "react";
+import React, {useContext } from "react";
 import "./ProfTable.css";
 import { AttendanceContext } from "../Helpers/Context";
 import STUDENTS from "../Students/Student";
 
 const YoklamaTablosu = () => {
-  const {number,all, lessons,setAll} = useContext(AttendanceContext);
+  const {number,all, lessons} = useContext(AttendanceContext);
   const izid = [];
   
   all.forEach((element) => {
