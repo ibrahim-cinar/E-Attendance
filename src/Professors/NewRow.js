@@ -2,11 +2,9 @@ import React, { useState, useContext } from "react";
 import { AttendanceContext } from "../Helpers/Context";
 import STUDENTS from "../Students/Student";
 const NewRow = () => {
+  
   const { all, setAll, lessons } = useContext(AttendanceContext);
   const [ogrencinumara, setOgrenciNumara] = useState();
-
-
-  
   const ekle = () => {
     const now = new Date();
     let date = now.toLocaleString("tr-TR");
@@ -34,7 +32,7 @@ const NewRow = () => {
   };
 
   return (
-    <div>
+    <div className="newrow">
       <input
         className="input2"
         onChange={(e) => setOgrenciNumara(e.target.value)}

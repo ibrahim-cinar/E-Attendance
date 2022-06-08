@@ -6,6 +6,8 @@ import NewRow from "../Professors/NewRow";
 const Event = () => {
   const { setPageState,all } = useContext(AttendanceContext);
   const [kaydet, setKaydet] = useState();
+  
+  
   const Gelenler=()=>{
     console.log(all);
     setKaydet(all);
@@ -19,7 +21,6 @@ const Event = () => {
     <div className="clm2">
       <div className="middle">
         <YoklamaTablosu />
-        <NewRow />
       </div>
 
       <div>

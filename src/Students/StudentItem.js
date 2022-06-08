@@ -57,28 +57,17 @@ const StudentLesson = () => {
 
   return (
     <div className="clm">
-      <img
-        src={require("../images/trakya-universitesi-logo.png")}
-        width="200"
-        height="200"
-      />
+      <img src={require("../images/trakya-universitesi-logo.png")} width="200" height="200"/>
 
-      <h3>
-        TRAKYA ÜNİVERSİTESİ <br /> E-YOKLAMA UYGULAMASI
-      </h3>
+      <h3> TRAKYA ÜNİVERSİTESİ <br /> E-YOKLAMA UYGULAMASI</h3>
 
       <input className="input" disabled value={number} />
       <input className="input" disabled value={STUDENTS[x].studentName} />
-
       <input className="input" disabled value={STUDENTS[x].studentDepartmen} />
-      <input
-        className="input2"
-        placeholder="Ders Kodu"
-        onChange={(e) => setLessons(e.target.value)}
-      ></input>
-      <button className="button button1" onClick={Information}>
-        Yoklamaya Katıl
-      </button>
+
+      <input className="input2" placeholder="Ders Kodu" onChange={(e) => setLessons(e.target.value)}></input>
+      <button className="button button1" onClick={Information}>Yoklamaya Katıl</button>
+
     </div>
   );
 };

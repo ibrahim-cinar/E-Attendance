@@ -2,6 +2,7 @@ import React, {useContext } from "react";
 import "./ProfTable.css";
 import { AttendanceContext } from "../Helpers/Context";
 import STUDENTS from "../Students/Student";
+import NewRow from "./NewRow";
 
 const YoklamaTablosu = () => {
   const {number,all, lessons} = useContext(AttendanceContext);
@@ -28,8 +29,16 @@ const YoklamaTablosu = () => {
   return (
     <div className="app-container">
       <div>
+      <img
+        src={require("../images/trakya-universitesi-logo.png")}
+        width="200"
+        height="200"
+      />
         <h4>DERSİ ALAN ÖĞRENCİ SAYISI:{studentcount}</h4>
         <h4>DERSE KATILAN ÖĞRENCİ SAYISI:{izid.length}</h4>
+        <NewRow  />
+        <h2> {lessons}</h2>
+
       </div>
       <table>
         <thead>

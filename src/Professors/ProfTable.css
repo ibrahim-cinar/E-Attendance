@@ -3,15 +3,15 @@
     flex-direction: column;
     gap: 10px;
     padding: 2rem;
-    width: fit-content;
     align-items: left;
+    margin-bottom: 50px;
+    width: fit-content;
   }
   
   table {
     border-collapse: collapse;
     width: 650px;
     margin-bottom: 100px;
-    
     
   }
   
@@ -21,6 +21,8 @@
     padding: 85px;
     font-size: 16px;
     align-items: left;
+    width: fit-content;
+
   }
   td {
     border: 4px solid #d1d8db;
@@ -33,11 +35,13 @@
     background:#f7fbfe;
     padding: 15px;
     width: 10px;
+
     
   }
   tr{
     width: fit-content;
     margin: 10px;
+
     
   }
   
@@ -45,35 +49,45 @@
     background-color: rgb(189, 240, 244);
     font-size: 24px;
     padding: 19.4px;
+    width: fit-content;
+
     
   }
   
   form {
     display: flex;
     gap: 5px;
+    width: fit-content;
+
 
   }
   
   form td:last-child {
     display: flex;
     justify-content: space-evenly;
+    width: fit-content;
+
     
   }
   
   form * {
     font-size: 32px;
+    width: fit-content;
+
     
   }
   h4{
     text-align: left;
+    width: fit-content;
+
     
 
   }
   .clm2{
-    margin-left: 25%;
+    margin-left: 33%;
     margin-right: 25%;
+    margin-top: -100px;
     align-items: center;
-
     padding: 8px;
     flex-direction: column;
     display: flex;
@@ -81,8 +95,17 @@
     gap: 16px;
     border-radius: 8px;
     box-shadow: 10px 10px 5px 12px lightblue;
+    width: fit-content;
+
     }
   .middle{
     margin-left: 25%;
     margin-right: 25%;
+    width: fit-content;
+
     }
+  .newrow{
+    text-align: left;
+    margin-bottom: 50px;
+    width: fit-content;
+  }
