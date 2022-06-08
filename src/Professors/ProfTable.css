@@ -4,12 +4,14 @@
     gap: 10px;
     padding: 2rem;
     width: fit-content;
+    align-items: left;
   }
   
   table {
     border-collapse: collapse;
     width: 650px;
     margin-bottom: 100px;
+    
     
   }
   
@@ -18,8 +20,7 @@
     text-align: center;
     padding: 85px;
     font-size: 16px;
-    width: fit-content;
-
+    align-items: left;
   }
   td {
     border: 4px solid #d1d8db;
@@ -32,43 +33,50 @@
     background:#f7fbfe;
     padding: 15px;
     width: 10px;
+    
   }
   tr{
     width: fit-content;
     margin: 10px;
+    
   }
   
   td {
     background-color: rgb(189, 240, 244);
     font-size: 24px;
-    padding: 49px;
-    margin: 10px;
+    padding: 19.4px;
+    
   }
   
   form {
     display: flex;
     gap: 5px;
+
   }
   
   form td:last-child {
     display: flex;
     justify-content: space-evenly;
+    
   }
   
   form * {
     font-size: 32px;
+    
   }
   h4{
     text-align: left;
+    
 
   }
   .clm2{
     margin-left: 25%;
     margin-right: 25%;
+    align-items: center;
+
     padding: 8px;
     flex-direction: column;
     display: flex;
-    align-items: center;
     border:2px solid #aab;
     gap: 16px;
     border-radius: 8px;

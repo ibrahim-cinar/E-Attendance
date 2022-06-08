@@ -14,6 +14,7 @@ const StudentLesson = () => {
   let datas = {};
   const x = STUDENTS.findIndex((e) => e.studentNumber === number);
   STUDENTS[x].studentLesson.find((eleman) => eleman === inputCode);
+  
   if (all[0] !== undefined) {
     all.forEach((dataobject) => {
       if (dataobject.number === number) {

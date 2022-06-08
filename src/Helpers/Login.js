@@ -8,6 +8,7 @@ const Login = () => {
   const { setPageState, password, setPassword, number, setNumber,} =
     useContext(AttendanceContext);
   const control = () => {
+    
     PROFESSORS.forEach((professor) => {
       if (
         password === professor.profpassword &&

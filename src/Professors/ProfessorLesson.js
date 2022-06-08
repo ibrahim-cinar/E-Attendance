@@ -5,28 +5,18 @@ import PROFESSORS from "./Professor";
 const ProfessorLesson = () => {
   const { number, lessons, setLessons, setPageState, setStart, start } =
     useContext(AttendanceContext);
-  const LessonCode = [];
-  const professorDp = [];
-  const professorNm = [];
 
-  PROFESSORS.forEach((item) => {
-    if (item.profNumber === number) {
-      <div key={number}>
-        <div>{LessonCode.push(item.professorLessons)}</div>
-        <div>{professorDp.push(item.professorDepartmen)}</div>
-        <div>{professorNm.push(item.profName)}</div>
-      </div>;
-    }
-  });
+
+  const x = PROFESSORS.findIndex((e) => e.profNumber === number);
+  PROFESSORS[x].professorLessons.find((eleman) => eleman === lessons);  
+
   const ProfInfo = () => {
-    LessonCode.forEach((code) => {
-      code.forEach((element) => {
-        if (lessons === element) {
+    PROFESSORS[x].professorLessons.forEach((code) => { 
+        if (lessons === code) {
           setPageState("Event");
         } else {
           console.log("hatalı giriş");
         }
-      });
     });
     setStart(true);
   };
@@ -41,9 +31,9 @@ const ProfessorLesson = () => {
       <h3>
         TRAKYA ÜNİVERSİTESİ <br /> E-YOKLAMA UYGULAMASI
       </h3>
-      <input className="input" disabled value={number} />
-      <input className="input" disabled value={professorNm} />
-      <input className="input" disabled value={professorDp} />
+      <input className="input" disabled value={PROFESSORS[x].profNumber} />
+      <input className="input" disabled value={PROFESSORS[x].profName} />
+      <input className="input" disabled value={PROFESSORS[x].professorDepartmen} />
       <input
         className="input2"
         type="text"

@@ -4,9 +4,9 @@ import { AttendanceContext } from "../Helpers/Context";
 import STUDENTS from "../Students/Student";
 
 const YoklamaTablosu = () => {
-  const[ogrencinumara,setOgrenciNumara] = useState();
   const {number,all, lessons,setAll} = useContext(AttendanceContext);
   const izid = [];
+  
   all.forEach((element) => {
     if(element.number !== number){
       if(element.InputCode === lessons){
@@ -14,7 +14,6 @@ const YoklamaTablosu = () => {
      }
     }
   });
-
 
   let studentcount = 0;
   STUDENTS.forEach((element) => {
@@ -24,6 +23,7 @@ const YoklamaTablosu = () => {
       }
     });
   });
+
 
   return (
     <div className="app-container">
