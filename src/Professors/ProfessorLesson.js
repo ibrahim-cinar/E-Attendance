@@ -27,7 +27,6 @@ const ProfessorLesson = () => {
         width="200"
         height="200"
       />
-
       <h3>
         TRAKYA ÜNİVERSİTESİ <br /> E-YOKLAMA UYGULAMASI <br /> PROFESÖR SAYFASI <br /> <br />
       </h3>
